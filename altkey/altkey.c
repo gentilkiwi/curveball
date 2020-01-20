@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 				{
 					if(xCert = PEM_read_bio_X509(bCert, NULL, 0, NULL))
 					{
-						X509_print_ex(bOut, xCert, 0, X509_FLAG_NO_VERSION | X509_FLAG_NO_SIGNAME | X509_FLAG_NO_EXTENSIONS | X509_FLAG_NO_SIGDUMP | X509_FLAG_NO_EXTENSIONS | X509_FLAG_NO_AUX | X509_FLAG_NO_ATTRIBUTES | X509_FLAG_NO_IDS);
+						X509_print_ex(bOut, xCert, 0, X509_FLAG_NO_VERSION | X509_FLAG_NO_SIGNAME | X509_FLAG_NO_SIGDUMP | X509_FLAG_NO_EXTENSIONS | X509_FLAG_NO_AUX | X509_FLAG_NO_ATTRIBUTES | X509_FLAG_NO_IDS);
 						if(publicKey = X509_get0_pubkey(xCert))
 						{
 							if(EVP_PKEY_id(publicKey) == EVP_PKEY_EC)
