@@ -1,6 +1,14 @@
 # curveball
 CVE-2020-0601 #curveball - Alternative Key Calculator
 
+## Build
+
+### Windows
+Visual Studio 2012 or >, then build the solution.
+
+### Linux / Unix
+`cc altkey.c -lcrypto -o altkey`
+
 ## Usage
 
 Usage: `altkey ec_public_certificate.pem [ec_new_privatekey.pem]`
